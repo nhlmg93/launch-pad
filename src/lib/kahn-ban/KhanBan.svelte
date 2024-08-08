@@ -7,6 +7,7 @@ A component that allow a note and is draggable.
 -->
 <script>
 	import { draggable } from "@neodrag/svelte";
+	import KhanBanButton from "./khan-ban-button.svelte";
 </script>
 
 <div
@@ -21,8 +22,10 @@ A component that allow a note and is draggable.
 		<h2>Finished</h2>
 	</div>
 	<div class="grid grid-flow-col grid-cols-3 h-full">
-		<div class="">Col1</div>
-		<div class="border-black border-l-2 border-r-2">Col2</div>
-		<div class="">Col3</div>
+		<KhanBanButton />
+		<div class="border-black border-l-2 border-r-2">
+			<KhanBanButton />
+		</div>
+		<KhanBanButton />
 	</div>
 </div>
